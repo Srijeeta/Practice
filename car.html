@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+background-image: url(https://www.clipartsgram.com/image/1024591308-dark-black-website-background.jpg);
+}
+ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: auto; 
+}
+
+li {
+    float: right;
+}
+#sr{
+  float:left;
+}
+ 
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+
+#s{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    
+}
+
+li a:hover {
+    background-color: #4CAF50;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=txt], select {
+    width:70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#status{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    
+    #country{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+
+  .divleft {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
+h3{
+color: white;
+text-align: center;
+}
+
+
+.divright:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.divright img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.divright {
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background: grey;
+  padding: 10px;
+}
+.div-outer-wrapper {
+  text-align: center;
+  color: white;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#Gallery">Gallery</a></li>
+  <li><a class="active"  href="#home">Home</a></li>
+</ul>
+
+
+<ul>
+  <li id="sr"><a id="s" class="active" href="#home"><b>SR MOTORS</b></a></li>
+  <li id="sr"><a id="s" href="#contact">Book A Test Drive</a></li>
+  <li id="sr"><a id="s" href="#Gallery">Service</a></li>
+</ul>
+<div class="div-outer-wrapper">
+  <div class="divright">
+      <img src="https://blenderartists.org/forum/attachment.php?attachmentid=167663&d=1326981585" alt="Car Show room WIP">
+      <h2>SHOWROOM</h2>
+  </div>
+
+  <div class="divright">
+      <img src="https://aos.iacpublishinglabs.com/question/aq/1400px-788px/much-full-car-service-cost_39e0b5ace51ebdb.jpg?domain=cx.aos.ask.com" alt="How much will a full car service cost?">
+      <h2>SERVICE</h2>
+    </div>
+    
+    <div class="divright">
+      <img src="http://fusia.ca/wp-content/uploads/2016/04/Car-shopping.jpg" alt="Things to Consider Before Going Car Shopping">
+      <h2>SHOPPING</h2>
+    </div>
+</div>
+<h3>Request A Test Drive</h3>
+
+<div class="divleft">
+  <form action="action_page.php">
+    <label for="fname">Full Name</label>
+    <select id="status" name="Status">
+      <option value="Mr.">Mr.</option>
+      <option value="Mrs.">Mrs.</option>
+      <option value="Miss">Miss</option>
+    </select>
+    <input type="txt" id="fname" name="firstname">
+
+    <label for="email">Email Id</label>
+    <input type="text" id="email" name="email" placeholder="Enter Your Email ID">
+    
+     <label for="email">Mobile No.</label>
+    <input type="text" id="email" name="email">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+    <option value="india">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    
+    <label for="city">City</label> 
+    <input type="text" id="city" name="city">
+  
+  <label for="vehicle">Current Vehicle</label>
+    <input type="text" id="cvehicle" name="cvehicle" placeholder="If Any">
+    
+    <label for="Model">Model you are interested in</label>
+    <input type="text" id="cvehicle" name="cvehicle">
+  
+  <label for="comment">Comment</label>
+    <input type="text" id="comment" name="comment">
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+</body>
+</html>
